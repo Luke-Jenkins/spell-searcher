@@ -1,0 +1,17 @@
+filetype==1.0.13
+flake8==4.0.1
+mccabe==0.6.1
+numpy==1.22.4
+opencv-python==4.5.5.64
+packaging==21.3
+pandas==1.4.2
+Pillow==9.1.1
+pycodestyle==2.8.0
+pyflakes==2.4.0
+PyMuPDF==1.19.6
+pyparsing==3.0.9
+PyPDF2==1.28.2
+pytesseract==0.3.9
+python-dateutil==2.8.2
+pytz==2022.1
+six==1.16.0
