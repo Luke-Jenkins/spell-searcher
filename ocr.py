@@ -106,15 +106,56 @@ class Preprocess:  # make image more readable for OCR
         return output_img
 
 
-# display image on screen until user presses a key
-def display_img(title, image):
-    cv2.namedWindow('image', cv2.WINDOW_NORMAL)
-    cv2.setWindowTitle('image', title)
-    cv2.resizeWindow('image', 1200, 900)
+class display:  # show image and text on screen
 
-    # display image
-    cv2.imshow('image', image)
-    # maintain until user presses key
-    cv2.waitKey(0)
-    # destroy window on key press
-    cv2.destroyAllWindows()
+    def __init__(self) -> None:
+        pass
+
+    # display image on screen until user presses a key
+    def img(self, title, image):
+        cv2.namedWindow('image', cv2.WINDOW_NORMAL)
+        cv2.setWindowTitle('image', title)
+        cv2.resizeWindow('image', 1200, 900)
+
+        # display image
+        cv2.imshow('image', image)
+        # maintain until user presses key
+        cv2.waitKey(0)
+        # destroy window on key press
+        cv2.destroyAllWindows()
+
+    # loops through captured text and arranges text line by line
+    def ss_text(self, ss_details):
+
+        # arrange text after scanning page
+        parse_text = []
+        word_list = []
+        last_word = ''
+
+        # loop trhough captured text on page
+        for word in ss_details['text']:
+            # if word captured is not empty
+            if word != '':
+                # add it to the line word list
+                word_list.append(word)
+                last_word = word
+            if (last_word != '' and word == '') or (word == ss_details['text'][1]):
+                parse_text.append(word_list)
+                word_list = []
+
+        return parse_text
+
+
+class search:  # functions for searching text
+    def __init__(self) -> None:
+        pass
+
+    # searching for text within image of content
+    def for_text(self, ss_details, search_str):
+
+        # find all matches within one page
+        results = re.findall(search_str, ss_details['text'], re.IGNORECASE)
+
+        # in case multiple in one page
+        for result in results:
+            yield result
