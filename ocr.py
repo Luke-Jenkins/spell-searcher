@@ -1,6 +1,7 @@
 # read pdf and outputs its text
 # utilizes Google Tesseract OCR library
 
+from operator import index
 import os
 import re
 import argparse
@@ -159,3 +160,32 @@ class search:  # functions for searching text
         # in case multiple in one page
         for result in results:
             yield result
+
+
+class Serialize:  # format and eval text for storage to db
+    def __init__(self) -> None:
+        pass
+
+    # appends data of PDF content line by line to pandas df
+    def save_page_content(self, pdfContent, page_id, page_data):
+        if page_data:
+            for idx, line in enumerate(page_data, 1):
+                line = ' '.join(line)
+                pdfContent = pdfContent.append(
+                    {'page': page_id, 'line_id': idx, 'line': line},
+                    ignore_index=True
+                )
+
+        return pdfContent
+
+    # outputs contents of padnas to csv w/ same path but diff extension (.csv)
+    def save_file_content(self, pdfContent, input_file):
+        content_file = os.path.join(
+            os.path.dirname(input_file), os.path.splitext(
+                os.path.basename(input_file))[0] + '.csv')
+
+        pdfContent.to_csv(content_file, sep=',', index=False)
+
+        return content_file
+
+
