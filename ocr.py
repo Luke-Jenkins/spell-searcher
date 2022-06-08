@@ -161,6 +161,22 @@ class search:  # functions for searching text
         for result in results:
             yield result
 
+    # calculate confidence score of text from grabbed image
+    def calculate_ss_confidence(self, ss_details: dict):
+        # page_num  --> Page number of the detected text or item
+        # block_num --> Block number of the detected text or item
+        # par_num   --> Paragraph number of the detected text or item
+        # line_num  --> Line number of the detected text or item
+        # Convert the dict to dataFrame       
+        df = pd.DataFrame.from_dict(ss_details)
+        # convert the field conf (confidence) to numberic
+        df['conf'] = pd.to_numeric(df['conf'], errors='coerce')
+        # Elliminate records with negative confidence
+        df = df[df.conf != -1]
+        # Calculate mean confidence by page
+        conf = df.groupby(['page_num'])['conf'].mean().tolist()
+        return conf[0]
+
 
 class Serialize:  # format and eval text for storage to db
     def __init__(self) -> None:
@@ -187,5 +203,3 @@ class Serialize:  # format and eval text for storage to db
         pdfContent.to_csv(content_file, sep=',', index=False)
 
         return content_file
-
-
