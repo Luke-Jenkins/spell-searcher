@@ -20,24 +20,24 @@ args = vars(ap.parse_args())
 images = cv2.imread(args['image'])
 
 # convert to grayscale
-gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
+processed = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
 
 # checking whether thresh or blur
 if args['pre_processor'] == 'thresh':
-    cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
+    cv2.threshold(processed, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
 if args['pre_processor'] == 'blur':
-    cv2.medianBlur(gray, 3)
+    cv2.medianBlur(processed, 3)
 
 # memory usage with image i.e. adding image to memory
 filename = '{}.jpg'.format(os.getpid())
-cv2.imwrite(filename, gray)
+cv2.imwrite(filename, processed)
 text = pytesseract.image_to_string(Image.open(filename))
 os.remove(filename)
 print(text)
 
 # show the output image
 cv2.imshow("Image Input", images)
-cv2.imshow("Output In Grayscale", gray)
+cv2.imshow("Output In Grayscale", processed)
 
 # waits until a key is pressed to close the displayed images
 cv2.waitKey(0)
