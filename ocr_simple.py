@@ -38,4 +38,6 @@ print(text)
 # show the output image
 cv2.imshow("Image Input", images)
 cv2.imshow("Output In Grayscale", gray)
+
+# waits until a key is pressed to close the displayed images
 cv2.waitKey(0)
