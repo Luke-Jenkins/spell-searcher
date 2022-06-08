@@ -23,6 +23,7 @@ pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
 
 class Preprocess:  # make image more readable for OCR
+    
     def __init__(self):
         self.kernel = np.ones((5, 5), np.unit8)
 
@@ -140,22 +141,25 @@ class display:  # show image and text on screen
                 # add it to the line word list
                 word_list.append(word)
                 last_word = word
-            if (last_word != '' and word == '') or (word == ss_details['text'][1]):
+            if (last_word != '' and word == '') or (
+                    word == ss_details['text'][1]):
                 parse_text.append(word_list)
                 word_list = []
 
         return parse_text
 
 
-class search:  # functions for searching text
-    def __init__(self) -> None:
-        pass
+class Search:  # functions for searching text
+    
+    # initializes ss_details variable as class variable
+    def __init__(self, ss_details) -> None:
+        self.ss_details = ss_details
 
     # searching for text within image of content
-    def for_text(self, ss_details, search_str):
+    def for_text(self, search_str):
 
         # find all matches within one page
-        results = re.findall(search_str, ss_details['text'], re.IGNORECASE)
+        results = re.findall(search_str, self.ss_details['text'], re.IGNORECASE)
 
         # in case multiple in one page
         for result in results:
@@ -168,7 +172,7 @@ class search:  # functions for searching text
         # par_num   --> Paragraph number of the detected text or item
         # line_num  --> Line number of the detected text or item
         # Convert the dict to dataFrame       
-        df = pd.DataFrame.from_dict(ss_details)
+        df = pd.DataFrame.from_dict(self.ss_details)
         # convert the field conf (confidence) to numberic
         df['conf'] = pd.to_numeric(df['conf'], errors='coerce')
         # Elliminate records with negative confidence
@@ -203,3 +207,10 @@ class Serialize:  # format and eval text for storage to db
         pdfContent.to_csv(content_file, sep=',', index=False)
 
         return content_file
+
+
+class Scan:  # functions for scanning the pdf files
+    def __init__(self) -> None:
+        pass
+
+    def ocr_img()
