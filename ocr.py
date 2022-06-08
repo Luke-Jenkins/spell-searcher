@@ -23,7 +23,7 @@ pytesseract.pytesseract.tesseract_cmd = tesseract_path
 
 
 class Preprocess:  # make image more readable for OCR
-    
+
     def __init__(self):
         self.kernel = np.ones((5, 5), np.unit8)
 
@@ -150,7 +150,7 @@ class display:  # show image and text on screen
 
 
 class Search:  # functions for searching text
-    
+
     # initializes ss_details variable as class variable
     def __init__(self, ss_details) -> None:
         self.ss_details = ss_details
@@ -159,7 +159,8 @@ class Search:  # functions for searching text
     def for_text(self, search_str):
 
         # find all matches within one page
-        results = re.findall(search_str, self.ss_details['text'], re.IGNORECASE)
+        results = re.findall(
+            search_str, self.ss_details['text'], re.IGNORECASE)
 
         # in case multiple in one page
         for result in results:
@@ -171,7 +172,7 @@ class Search:  # functions for searching text
         # block_num --> Block number of the detected text or item
         # par_num   --> Paragraph number of the detected text or item
         # line_num  --> Line number of the detected text or item
-        # Convert the dict to dataFrame       
+        # Convert the dict to dataFrame
         df = pd.DataFrame.from_dict(self.ss_details)
         # convert the field conf (confidence) to numberic
         df['conf'] = pd.to_numeric(df['conf'], errors='coerce')
@@ -212,5 +213,3 @@ class Serialize:  # format and eval text for storage to db
 class Scan:  # functions for scanning the pdf files
     def __init__(self) -> None:
         pass
-
-    def ocr_img()
