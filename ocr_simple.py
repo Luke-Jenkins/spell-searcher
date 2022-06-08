@@ -23,9 +23,9 @@ images = cv2.imread(args['image'])
 gray = cv2.cvtColor(images, cv2.COLOR_BGR2GRAY)
 
 # checking whether thresh or blur
-if args['pre_preprocessor'] == 'thresh':
+if args['pre_processor'] == 'thresh':
     cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
-if args['pre_preprocessor'] == 'blur':
+if args['pre_processor'] == 'blur':
     cv2.medianBlur(gray, 3)
 
 # memory usage with image i.e. adding image to memory
