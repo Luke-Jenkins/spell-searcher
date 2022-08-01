@@ -12,26 +12,28 @@ from PIL import Image
 
 
 class Scan:  # use OCR to grab array of text
-    def __init__(self, pdf_title):
-        if platform.system() == "Windows":
-            # We may need to do some additional downloading and setup...
-            # Windows needs a PyTesseract Download
-            # https://github.com/UB-Mannheim/tesseract/wiki/Downloading-Tesseract-OCR-Engine
+    def __init__(self):
+        # if platform.system() == "Windows":
+        #     # We may need to do some additional downloading and setup...
+        #     # Windows needs a PyTesseract Download
+        #     # https://github.com/UB-Mannheim/tesseract/wiki/Downloading-Tesseract-OCR-Engine
 
-            pytesseract.pytesseract.tesseract_cmd = (
-                r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-            )
+        #     pytesseract.pytesseract.tesseract_cmd = (
+        #         r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+        #     )
 
-            # Windows also needs poppler_exe
-            self.path_to_poppler_exe = Path(r"C:\.....")
+        #     # Windows also needs poppler_exe
+        #     self.path_to_poppler_exe = Path(r"C:\.....")
 
-            # Put our output files in a sane place...
-            out_directory = Path(r"~\Desktop").expanduser()
-        else:
-            out_directory = Path(os.getcwd)
+        #     # Put our output files in a sane place...
+        #     out_directory = Path(r"~\Desktop").expanduser()
+        # else:
+        out_directory = Path(os.getcwd())
+        print(out_directory)
 
         # PATH to PDF
-        self.pdf_file = path(pdf_title)
+        self.pdf_file = Path(os.getcwd() + r"/spells.pdf")
+        print(self.pdf_file)
 
         # store all pages of the pdf in variable
         self.image_file_list = []
@@ -45,12 +47,12 @@ class Scan:  # use OCR to grab array of text
         with TemporaryDirectory() as tempdir:
 
             # check platform & rad in PDF at 500 DPI
-            if platform.system() == "Windows":
-                pdf_pages = convert_from_path(
-                    self.pdf_file, 500, poppler_path=self.path_to_poppler_exe
-                )
-            else:
-                pdf_pages = convert_from_path(self.pdf_file, 500)
+            # if platform.system() == "Windows":
+            #     pdf_pages = convert_from_path(
+            #         self.pdf_file, 500, poppler_path=self.path_to_poppler_exe
+            #     )
+            # else:
+            pdf_pages = convert_from_path(self.pdf_file, 500)
 
             # iterate through pages
             for page_enumeration, page in enumerate(pdf_pages, start=1):
@@ -96,3 +98,11 @@ class Serialize:  # eval & format for db
 class Store:  # insert formatted objects into db
     def __init__(self) -> None:
         pass
+
+
+# for debugging
+def debug():
+    Scan().extract()
+
+
+debug()
