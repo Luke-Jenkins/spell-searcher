@@ -3,6 +3,7 @@
 from distutils.log import info
 from importlib.resources import path
 import os
+from tqdm import tqdm 
 import platform
 from tempfile import TemporaryDirectory
 from pathlib import Path
@@ -68,7 +69,7 @@ class Scan:  # use OCR to grab array of text
                         page + 5 - 1, max_pages))
 
                 # iterate through pages
-                for page_enumeration, page in enumerate(pdf_pages, start=1):
+                for page_enumeration, page in tqdm(enumerate(pdf_pages, start=1), desc='Reading: '):
                     # enumerate() "counts" the pages for us.
 
                     # Create a file name to store the image
@@ -85,7 +86,7 @@ class Scan:  # use OCR to grab array of text
                     # Save the image of the page in system
                     page.save(filename, "JPEG")
                     self.image_file_list.append(filename)
-                    print(f'Read page {page_enumeration + n:03}')
+                    # print(f'Read page {page_enumeration + n:03}')
                 n += 5
 
             # step 2: recognizing text from images
@@ -95,10 +96,10 @@ class Scan:  # use OCR to grab array of text
                 # all contents of al images go into same file
 
                 # iterate from 1 to toal pages
-                for image_file in self.image_file_list:
+                for image_file in tqdm(self.image_file_list, desc='Writing: '):
                     text = pytesseract.image_to_string(Image.open(image_file))
                     output_file.write(text)
-                    print(f'Wrote page {image_file[-7:-4]}')
+                    # print(f'Wrote page {image_file[-7:-4]}')
 
 
 class Parse:  # make object for each spell
