@@ -1,15 +1,17 @@
 # test suite for pdf reader
 
+from os import getcwd
 import unittest
+import os
+from os.path import exists
 
-from reader import Scan
+import reader
 
 
 class ScanTest(unittest.TestCase):
     def test_manual_population(self):
-        manual = Scan('spells.pdf')
-        self.assertTrue(manual.extract() is not None)
-        manual.close()
+        reader.debug()
+        self.assertTrue(exists(os.getcwd() + r'/out_text.txt'))
 
 
 if __name__ == "__main__":
