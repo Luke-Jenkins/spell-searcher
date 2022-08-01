@@ -32,7 +32,7 @@ class Scan:  # use OCR to grab array of text
         print(out_directory)
 
         # PATH to PDF
-        self.pdf_file = Path(os.getcwd() + r"/spells.pdf")
+        self.pdf_file = Path(os.getcwd() + r"/images/spells.pdf")
         print(self.pdf_file)
 
         # store all pages of the pdf in variable
