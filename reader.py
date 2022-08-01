@@ -62,14 +62,14 @@ class Scan:  # use OCR to grab array of text
 
             # counter for file enumeration
             n = 0
-            for page in range(1, max_pages + 1, 5):
+            for page in tqdm(range(1, max_pages + 1, 5), desc='Reading'):
 
                 pdf_pages = convert_from_path(
                     self.pdf_file, 500, first_page=page, last_page=min(
                         page + 5 - 1, max_pages))
 
                 # iterate through pages
-                for page_enumeration, page in tqdm(enumerate(pdf_pages, start=1), desc='Reading: '):
+                for page_enumeration, page in enumerate(pdf_pages, start=1):
                     # enumerate() "counts" the pages for us.
 
                     # Create a file name to store the image
@@ -96,7 +96,7 @@ class Scan:  # use OCR to grab array of text
                 # all contents of al images go into same file
 
                 # iterate from 1 to toal pages
-                for image_file in tqdm(self.image_file_list, desc='Writing: '):
+                for image_file in tqdm(self.image_file_list, desc='Writing'):
                     text = pytesseract.image_to_string(Image.open(image_file))
                     output_file.write(text)
                     # print(f'Wrote page {image_file[-7:-4]}')
