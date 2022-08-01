@@ -43,6 +43,9 @@ class Scan:  # use OCR to grab array of text
         self.text_file = out_directory / Path("out_text.txt")
         print(f"Text File Dir: {self.text_file}")
 
+        self.read_debug = 0
+        self.write_debug = 0
+
     def extract(self):
         # step 1: convert pdfs to images
 
@@ -62,6 +65,7 @@ class Scan:  # use OCR to grab array of text
 
             # counter for file enumeration
             n = 0
+
             for page in tqdm(range(1, max_pages + 1, 5), desc='Reading'):
 
                 pdf_pages = convert_from_path(
@@ -86,7 +90,7 @@ class Scan:  # use OCR to grab array of text
                     # Save the image of the page in system
                     page.save(filename, "JPEG")
                     self.image_file_list.append(filename)
-                    # print(f'Read page {page_enumeration + n:03}')
+                    self.read_debug = page_enumeration + n
                 n += 5
 
             # step 2: recognizing text from images
@@ -99,7 +103,7 @@ class Scan:  # use OCR to grab array of text
                 for image_file in tqdm(self.image_file_list, desc='Writing'):
                     text = pytesseract.image_to_string(Image.open(image_file))
                     output_file.write(text)
-                    # print(f'Wrote page {image_file[-7:-4]}')
+                    self.write_debug = int(image_file[-7:-4])
 
 
 class Parse:  # make object for each spell
