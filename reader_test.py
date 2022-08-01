@@ -8,11 +8,10 @@ from os.path import exists
 import reader
 
 
-class ScanTest(unittest.TestCase):
-    def __init__(self):
-        reader.Scan().extract()
+class ScanTest(unittest.TestCase, reader.Scan):
 
     def test_file_output(self):
+        reader.Scan().extract()
         self.assertTrue(exists(os.getcwd() + r'/out_text.txt'))
 
     def test_read_all_pages(self):
