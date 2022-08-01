@@ -10,7 +10,7 @@ import reader
 
 class ScanTest(unittest.TestCase):
     def test_manual_population(self):
-        reader.debug()
+        reader.Scan().extract()
         self.assertTrue(exists(os.getcwd() + r'/out_text.txt'))
 
 
