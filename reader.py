@@ -3,6 +3,7 @@
 from distutils.log import info
 from importlib.resources import path
 import os
+from os.path import exists
 from tqdm import tqdm 
 import platform
 from tempfile import TemporaryDirectory
@@ -15,27 +16,13 @@ from PIL import Image
 
 class Scan:  # use OCR to grab array of text
     def __init__(self):
-        # if platform.system() == "Windows":
-        #     # We may need to do some additional downloading and setup...
-        #     # Windows needs a PyTesseract Download
-        #     # https://github.com/UB-Mannheim/tesseract/wiki/Downloading-Tesseract-OCR-Engine
 
-        #     pytesseract.pytesseract.tesseract_cmd = (
-        #         r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-        #     )
-
-        #     # Windows also needs poppler_exe
-        #     self.path_to_poppler_exe = Path(r"C:\.....")
-
-        #     # Put our output files in a sane place...
-        #     out_directory = Path(r"~\Desktop").expanduser()
-        # else:
         out_directory = Path(os.getcwd())
-        print(f"Out Directory: {out_directory}")
+        # print(f"Out Directory: {out_directory}")
 
         # PATH to PDF
         self.pdf_file = Path(os.getcwd() + r"/images/spells.pdf")
-        print(f"PDF File Dir: {self.pdf_file}")
+        # print(f"PDF File Dir: {self.pdf_file}")
 
         # store all pages of the pdf in variable
         self.image_file_list = []
@@ -43,21 +30,18 @@ class Scan:  # use OCR to grab array of text
         self.text_file = out_directory / Path("out_text.txt")
         print(f"Text File Dir: {self.text_file}")
 
-        self.read_debug = 0
-        self.write_debug = 0
+        # self.read_debug = 0
+        # self.write_debug = 0
 
     def extract(self):
+        # debug check
+        # if exists(os.getcwd() + r'/out_text.txt') is True:
+        #     return
+
         # step 1: convert pdfs to images
 
         # create temp dir for images
         with TemporaryDirectory() as tempdir:
-
-            # check platform & rad in PDF at 500 DPI
-            # if platform.system() == "Windows":
-            #     pdf_pages = convert_from_path(
-            #         self.pdf_file, 500, poppler_path=self.path_to_poppler_exe
-            #     )
-            # else:
             pdfinfo = pdfinfo_from_path(
                 self.pdf_file, userpw=None, poppler_path=None)
 
@@ -77,7 +61,7 @@ class Scan:  # use OCR to grab array of text
                     # enumerate() "counts" the pages for us.
 
                     # Create a file name to store the image
-                    filename = f"{tempdir}\page_{page_enumeration + n:03}.jpg"
+                    filename = f"{tempdir}/page_{page_enumeration + n:03}.jpg"
 
                     # Declaring filename for each page of PDF as JPG
                     # For each page, filename will be:
@@ -91,6 +75,7 @@ class Scan:  # use OCR to grab array of text
                     page.save(filename, "JPEG")
                     self.image_file_list.append(filename)
                     self.read_debug = page_enumeration + n
+                    # return self.read_debug
                 n += 5
 
             # step 2: recognizing text from images
@@ -104,6 +89,11 @@ class Scan:  # use OCR to grab array of text
                     text = pytesseract.image_to_string(Image.open(image_file))
                     output_file.write(text)
                     self.write_debug = int(image_file[-7:-4])
+                    # return self.write_debug
+
+        # return pages read and written
+        scanned = {'read': self.read_debug, 'written': self.write_debug}
+        return scanned
 
 
 class Parse:  # make object for each spell
