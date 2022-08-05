@@ -1,6 +1,5 @@
 # test suite for pdf reader
 
-from os import getcwd
 import unittest
 import os
 from os.path import exists
