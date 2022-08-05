@@ -1,0 +1,1357 @@
+a
+
+CHAPTER Il: SPELLS
+
+._©)
+
+BARD SPELLS
+
+CANTRIPS (0 LEVEL)
+Blade Ward
+Dancing Lights
+Friends
+
+Light
+
+Mage Hand
+Mending
+Message
+
+Minor Illusion
+Prestidigitation
+True Strike
+Vicious Mockery
+
+1sT LEVEL
+Animal Friendship
+
+Bane
+
+Charm Person
+Comprehend Languages
+Cure Wounds
+
+Detect Magic
+
+Disguise Self
+
+Dissonant Whispers
+Faerie Fire
+
+Feather Fall
+
+Healing Word
+
+Heroism
+
+Identify
+
+illusory Script
+Longstrider
+
+Silent Image
+
+Sleep
+
+Speak with Animals
+Tasha’s Hideous Laughter
+Thunderwave
+
+Unseen Servant
+
+2ND LEVEL
+Animal! Messenger
+Blindness/Deafness
+Calm Emotions
+Cloud of Daggers
+Crown of Madness
+Detect Thoughts
+Enhance Ability
+Enthrall
+
+Heat Metal
+
+HIS CHAPTER DESCRIBES THE MOST COMMON
+spells in the worlds of DUNGEONS &
+DRAGONS. The chapter begins with the
+spell lists of the spellcasting classes. The
+remainder contains spell descriptions,
+presented in alphabetical order by the
+name of the spell.
+
+Hold Person
+Invisibility
+
+Knock
+
+Lesser Restoration
+Locate Animals or Plants
+Locate Object
+Magic Mouth
+Phantasmal Force
+See Invisibility
+Shatter
+
+Silence
+Suggestion
+
+Zone of Truth
+
+3RD LEVEL
+
+Bestow Curse
+Clairvoyance
+Dispel Magic
+Fear
+
+Feign Death
+Glyph of Warding
+Hypnotic Pattern
+Leomund's Tiny Hut
+Major Image
+Nondetection
+Plant Growth
+Sending
+
+Speak with Dead
+Speak with Plants
+Stinking Cloud
+Tongues
+
+ATH LEVEL
+Compulsion
+Confusion
+
+Dimension Door
+Freedom of Movement
+Greater Invisibility
+Hallucinatory Terrain
+Locate Creature
+Polymorph
+
+5TH LEVEL
+Animate Objects
+Awaken
+
+Dominate Person
+Dream
+
+Geas
+
+Greater Restoration
+
+Hold Monster
+Legend Lore
+
+Mass Cure Wounds
+Mislead
+
+Modify Memory
+Planar Binding
+Raise Dead
+
+Scrying
+
+Seeming
+Teleportation Circle
+
+6TH LEVEL
+
+Eyebite
+
+Find the Path
+
+Guards and Wards
+Mass Suggestion
+
+Otto’s Irresistible Dance
+Programmed Illusion
+True Seeing
+
+7TH LEVEL
+
+Etherealness
+
+Forcecage
+
+Mirage Arcane
+
+Mordenkainen’s
+Magnificent Mansion
+
+Mordenkainen’s Sword
+
+Project Image
+
+Regenerate
+
+Resurrection
+
+Symbol
+
+Teleport
+
+8TH LEVEL
+Dominate Monster
+Feeblemind
+Glibness
+
+Mind Blank
+
+Power Word Stun
+
+OTH LEVEL
+Foresight
+
+Power Word Heal
+Power Word Kill
+True Polymorph
+
+CLERIC SPELLS
+
+CANTRIPS (0 LEVEL)
+
+Guidance
+
+Light
+
+Mending
+Resistance
+Sacred Flame
+Spare the Dying
+
+Thaumaturgy
+
+1ST LEVEL
+Bane
+Bless
+Command
+Create or Destroy Water
+Cure Wounds
+Detect Evil and Good
+Detect Magic
+Detect Poison and Disease
+Guiding Bolt
+Healing Word
+Inflict Wounds
+Protection from
+
+Evil and Good
+Purify Food and Drink
+Sanctuary
+Shield of Faith
+
+2ND LEVEL
+
+Aid
+
+Augury
+Blindness/Deafness
+Calm Emotions
+Continual Flame
+Enhance Ability
+Find Traps
+
+Gentle Repose
+Hold Person
+
+Lesser Restoration
+Locate Object
+Prayer of Healing
+Protection from Poison
+Silence
+
+Spiritual Weapon
+Warding Bond
+Zone of Truth
+
+3RD LEVEL
+
+Animate Dead
+
+Beacon of Hope
+Bestow Curse
+Clairvoyance
+
+Create Food and Water
+Daylight
+
+Dispel Magic
+
+Feign Death
+
+Glyph of Warding
+Magic Circle
+
+Mass Healing Word
+Meld into Stone
+Protection from Energy
+Remove Curse
+
+Revivify
+
+Sending
+
+Speak with Dead
+
+Spirit Guardians
+Tongues
+Water Walk
+
+4TH LEVEL
+Banishment
+Control Water
+Death Ward
+Divination
+
+Freedom of Movement
+
+Guardian of Faith
+Locate Creature
+Stone Shape
+
+5TH LEVEL
+
+Commune
+Contagion
+
+Dispel Evil and Good
+
+Flame Strike
+Geas
+
+Greater Restoration
+
+Hallow
+Insect Plague
+Legend Lore
+
+Mass Cure Wounds
+
+Planar Binding
+Raise Dead
+Scrying
+
+6TH LEVEL
+Blade Barrier
+Create Undead
+Find the Path
+Forbiddance
+Harm
+
+Heal
+
+Heroes’ Feast
+Planar Ally
+True Seeing
+Word of Recall
+
+7TH LEVEL
+Conjure Celestial
+Divine Word
+Etherealness
+Fire Storm
+
+Plane Shift
+Regenerate
+Resurrection
+Symbo!
+
+8TH LEVEL
+Antimagic Field
+Control Weather
+Earthquake
+Holy Aura
+
+QTH LEVEL
+
+Astral Projection
+
+Gate
+Mass Heal
+True Resurrection
+
+DRUID SPELLS
+
+CANTRIPS (O LEVEL)
+Druidcraft
+
+Guidance
+
+Mending
+
+Poison Spray
+
+Produce Flame
+Resistance
+
+Shillelagh
+
+Thorn Whip
+
+1ST LEVEL
+
+Animal Friendship
+Charm Person
+
+Create or Destroy Water
+Cure Wounds
+
+Detect Magic
+
+Detect Poison and Disease
+Entangle
+
+Faerie Fire
+
+Fog Cloud
+
+Goodberry
+
+Healing Word
+
+Jump
+
+Longstrider
+
+Purify Food and Drink
+Speak with Animals
+Thunderwave
+
+2ND LEVEL
+
+Animal Messenger
+Barkskin
+
+Beast Sense
+Darkvision
+
+Enhance Ability
+
+Find Traps
+
+Flame Blade
+
+Flaming Sphere
+
+Gust of Wind
+
+Heat Metal
+
+Hold Person
+
+Lesser Restoration
+Locate Animals or Plants
+Locate Object
+Moonbeam
+
+Pass without Trace
+Protection from Poison
+Spike Growth
+
+3RD LEVEL
+Call Lightning
+Conjure Animals
+Daylight
+
+Dispel Magic
+
+Feign Death
+
+Meld into Stone
+
+Plant Growth
+Protection from Energy
+Sleet Storm
+
+Speak with Plants
+Water Breathing
+
+Water Walk
+
+Wind Wall
+
+4TH LEVEL
+
+Blight
+
+Confusion
+
+Conjure Minor Elementals
+Conjure Woodland Beings
+Control Water
+
+Dominate Beast
+
+Freedom of Movement
+Giant Insect
+
+Grasping Vine
+Hallucinatory Terrain
+
+Ice Storm
+
+Locate Creature
+Polymorph
+
+Stone Shape
+
+Stoneskin
+
+Wall of Fire
+
+STH LEVEL
+Antilife Shell
+Awaken
+
+Commune with Nature
+Conjure Elemental
+Contagion
+
+Geas
+
+Greater Restoration
+Insect Plague
+
+Mass Cure Wounds
+Planar Binding
+Reincarnate
+Scrying
+
+Tree Stride
+
+Wall of Stone
+
+6TH LEVEL
+Conjure Fey
+
+Find the Path
+
+Heal
+
+Heroes’ Feast
+Move Earth
+Sunbeam
+Transport via Plants
+Wall of Thorns
+Wind Walk
+
+7TH LEVEL
+
+Fire Storm
+
+Mirage Arcane
+Plane Shift
+Regenerate
+Reverse Gravity
+
+8TH LEVEL
+Animal Shapes
+Antipathy/Sympathy
+Control Weather
+Earthquake
+Feeblemind
+Sunburst
+
+Tsunami
+
+QTH LEVEL
+Foresight
+Shapechange
+Storm of Vengeance
+True Resurrection
+
+PALADIN SPELLS
+
+1ST LEVEL
+
+Bless
+Command
+Compelled Duel
+Cure Wounds
+Detect Evil and Good
+Detect Magic
+Detect Poison and Disease
+Divine Favor
+Heroism
+Protection from
+
+Evil and Good
+Purify Food and Drink
+Searing Smite
+Shield of Faith
+Thunderous Smite
+Wrathful Smite
+
+2ND LEVEL
+
+Aid
+
+Branding Smite
+
+Find Steed
+
+Lesser Restoration
+Locate Object
+
+Magic Weapon
+Protection from Poison
+Zone of Truth
+
+3RD LEVEL
+
+Aura of Vitality
+Blinding Smite
+
+Create Food and Water
+Crusader’s Mantle
+Daylight
+
+Dispel Magic
+Elemental Weapon
+
+Magic Circle
+Remove Curse
+Revivify
+
+4TH LEVEL
+Aura of Life
+
+Aura of Purity
+Banishment
+Death Ward
+Locate Creature
+Staggering Smite
+
+5TH LEVEL
+Banishing Smite
+Circle of Power
+Destructive Smite
+Dispel Evil and Good
+Geas
+
+Raise Dead
+
+RANGER SPELLS
+
+1ST LEVEL
+
+Alarm
+
+Animal Friendship
+Cure Wounds
+Detect Magic
+Detect Poison and Disease
+Ensnaring Strike
+Fog Cloud
+Goodberry
+
+Hail of Thorns
+Hunter's Mark
+Jump
+
+Longstrider
+
+Speak with Animals
+
+2ND LEVEL
+
+Animal Messenger
+Barkskin
+
+Beast Sense
+
+Cordon of Arrows
+Darkvision
+
+Find Traps
+
+Lesser Restoration
+Locate Animals or Plants
+Locate Object
+
+Pass without Trace
+Protection from Poison
+Silence
+
+Spike Growth
+
+3RD LEVEL
+Conjure Animals
+Conjure Barrage
+Daylight
+Lightning Arrow
+Nondetection
+
+Plant Growth
+Protection from Energy
+Speak with Plants
+Water Breathing
+
+Water Walk
+
+Wind Wall
+
+4TH LEVEL
+
+Conjure Woodland Beings
+Freedom of Movement
+Grasping Vine
+
+Locate Creature
+Stoneskin
+
+5TH LEVEL
+
+Commune with Nature
+Conjure Volley
+
+Swift Quiver
+
+Tree Stride
+
+SORCERER SPELLS
+
+CANTRIPS (0 LEVEL)
+
+Acid Splash
+Blade Ward
+Chill Touch
+Dancing Lights
+Fire Bolt
+Friends
+
+Light
+
+Mage Hand
+Mending
+Message
+Minor Iilusion
+Poison Spray
+Prestidigitation
+Ray of Frost
+Shocking Grasp
+True Strike
+
+1ST LEVEL
+Burning Hands
+Charm Person
+Chromatic Orb
+Color Spray
+Comprehend Languages
+Detect Magic
+Disguise Seif
+Expeditious Retreat
+False Life
+
+Feather Fall
+
+Fog Cloud
+
+Jump
+
+Mage Armor
+Magic Missile
+
+Ray of Sickness
+Shield
+Silent Image
+
+Sleep
+Thunderwave
+Witch Bolt
+
+2ND LEVEL
+
+Alter Self
+Blindness/Deafness
+Blur
+
+Cloud of Daggers
+Crown of Madness
+Darkness
+Darkvision
+Detect Thoughts
+Enhance Ability
+Enlarge/Reduce
+Gust of Wind
+Hold Person
+Invisibility
+
+Knock
+
+Levitate
+
+Mirror Image
+Misty Step
+Phantasmal Force
+Scorching Ray
+See Invisibility
+Shatter
+
+Spider Climb
+Suggestion
+
+Web
+
+3RD LEVEL
+
+Blink
+Clairvoyance
+Counterspell
+Daylight
+
+Dispel Magic
+Fear
+
+Fireball
+
+Fly
+
+Gaseous Form
+Haste
+
+Hypnotic Pattern
+Lightning Bolt
+Major Image
+Protection from Energy
+Sleet Storm
+
+Slow
+
+Stinking Cloud
+Tongues
+
+Water Breathing
+Water Walk
+
+4TH LEVEL
+Banishment
+Blight
+Confusion
+Dimension Door
+Dominate Beast
+
+Greater Invisibility
+Ice Storm
+Polymorph
+Stoneskin
+
+Wall of Fire
+
+5TH LEVEL
+Animate Objects
+Cloudkill
+
+Cone of Cold
+Creation
+Dominate Person
+Hold Monster
+Insect Plague
+Seeming
+Telekinesis
+Teleportation Circle
+Wall of Stone
+
+6TH LEVEL
+Arcane Gate
+Chain Lightning
+Circle of Death
+Disintegrate
+Eyebite
+
+Globe of Invulnerability
+Mass Suggestion
+Move Earth
+Sunbeam
+
+True Seeing
+
+7TH LEVEL
+Delayed Blast Fireball
+Etherealness
+
+Finger of Death
+
+Fire Storm
+
+Plane Shift
+
+Prismatic Spray
+
+Reverse Gravity
+Teleport
+
+8TH LEVEL |
+Dominate Monster
+
+Earthquake |
+Incendiary Cloud )
+Power Word Stun
+Sunburst
+
+OTH LEVEL
+
+Gate
+
+Meteor Swarm
+
+Power Word Kill
+
+Time Stop )
+Wish |
+
+-7
+
+J is
+
+WARLOCK SPELLS
+
+CANTRIPS (0 LEVEL)
+Blade Ward
+
+Chill Touch
+
+Eldritch Blast
+
+Friends
+
+Mage Hand
+
+Minor Illusion
+
+Poison Spray
+Prestidigitation
+
+True Strike
+
+1ST LEVEL
+Armor of Agathys
+Arms of Hadar
+Charm Person
+Comprehend Languages
+Expeditious Retreat
+Hellish Rebuke
+Hex
+Illusory Script
+Protection from
+Evil and Good
+Unseen Servant
+Witch Bolt
+
+2ND LEVEL
+Cloud of Daggers
+Crown of Madness
+Darkness
+
+Enthrall
+
+Hold Person
+Invisibility
+
+Mirror Image
+Misty Step
+
+Ray of Enfeeblement
+Shatter
+
+Spider Climb
+Suggestion
+
+3RD LEVEL
+Counterspell
+Dispel Magic
+Fear
+
+Fly
+
+Gaseous Form
+Hunger of Hadar
+Hypnotic Pattern
+Magic Circle
+Major Image
+Remove Curse
+Tongues
+Vampiric Touch
+
+4TH LEVEL
+
+Banishment
+
+Blight
+
+Dimension Door
+Hallucinatory Terrain
+
+5TH LEVEL
+Contact Other Plane
+Dream
+
+Hold Monster
+Scrying
+
+6TH LEVEL
+Arcane Gate
+Circle of Death
+Conjure Fey
+Create Undead
+Eyebite
+
+Flesh to Stone
+Mass Suggestion
+True Seeing
+
+7TH LEVEL
+Etherealness
+Finger of Death
+Forcecage
+Plane Shift
+
+8TH LEVEL
+Demiplane
+Dominate Monster
+Feeblemind
+Glibness
+
+Power Word Stun
+
+QTH LEVEL
+Astral Projection
+Foresight
+Imprisonment
+Power Word Kill
+True Polymorph
+
+WIZARD SPELLS
+
+CANTRIPS (0 LEVEL)
+Acid Splash
+Blade Ward
+Chill Touch
+Dancing Lights
+Fire Bolt
+Friends
+
+Light
+
+Mage Hand
+Mending
+Message
+
+Minor Illusion
+Poison Spray
+Prestidigitation
+Ray of Frost
+Shocking Grasp
+True Strike
+
+1ST LEVEL
+
+Alarm
+
+Burning Hands
+
+Charm Person
+
+Chromatic Orb
+
+Color Spray
+
+Comprehend Languages
+
+Detect Magic
+
+Disguise Self
+
+Expeditious Retreat
+
+False Life
+
+Feather Fall
+
+Find Familiar
+
+Fog Cloud
+
+Grease
+
+Identify
+
+Illusory Script
+
+Jump
+
+Longstrider
+
+Mage Armor
+
+Magic Missile
+
+Protection from
+Evil and Good
+
+Ray of Sickness
+
+Shield
+
+Silent Image
+
+Sleep
+
+Tasha’s Hideous Laughter
+
+Tenser’s Floating Disk
+
+Thunderwave
+
+Unseen Servant
+
+Witch Bolt
+
+2ND LEVEL
+
+Alter Self
+
+Arcane Lock
+Blindness/Deafness
+Blur
+
+Cloud of Daggers
+Continual Flame
+Crown of Madness
+Darkness
+Darkvision
+Detect Thoughts
+Enlarge/Reduce
+Flaming Sphere
+Gentle Repose
+Gust of Wind
+Hold Person
+Invisibility
+
+Knock
+
+Levitate
+
+Locate Object
+Magic Mouth
+Magic Weapon
+Melf’s Acid Arrow
+Mirror Image
+
+Misty Step
+
+Nystul’s Magic Aura
+Phantasmal Force
+Ray of Enfeeblement
+Rope Trick
+Scorching Ray
+
+See Invisibility
+Shatter
+
+Spider Climb
+Suggestion
+
+Web
+
+3RD LEVEL
+
+Animate Dead
+Bestow Curse
+Blink
+Clairvoyance
+Counterspell
+Dispel Magic
+Fear
+
+Feign Death
+Fireball
+
+Fly
+
+Gaseous Form
+Glyph of Warding
+Haste
+
+Hypnotic Pattern
+Leomund’s Tiny Hut
+Lightning Bolt
+Magic Circle
+Major Image
+Nondetection
+Phantom Steed
+Protection from Energy
+Remove Curse
+Sending
+
+Sleet Storm
+
+Slow
+
+Stinking Cloud
+Tongues
+Vampiric Touch
+Water Breathing
+
+4TH LEVEL
+
+Arcane Eye
+
+Banishment
+
+Blight
+
+Confusion
+
+Conjure Minor Elementals
+Control Water
+Dimension Door
+Evard’s Black Tentacles
+Fabricate
+
+Fire Shield
+
+Greater Invisibility
+Hallucinatory Terrain
+Ice Storm
+
+Leomund’s Secret Chest
+Locate Creature Sunbeam
+
+SPELL DESCRIPTIONS
+
+Mordenkainen’s True Seeing
+The spells are presented in alphabetical order.
+
+Faithful Hound Wall of Ice
+
+Mordenkainen’
+ordenkainen’s 9TH LEVEL ACID SPLASH
+
+Private Sanctum oo
+Delayed Blast Fireball orjuration cantrip
+
+Otiluke’s Resilient Sphere
+
+Phantasmal Killer Ber ale>> mee 1 action
+Polymorph Finger of Death ange: 60 feet
+Forcecage Components: V, S
+
+Stone Shape
+
+Mirage Arcane Duration: Instantaneous
+
+Stoneskin
+
+Wall of Fire Mordenkainen’s You hurl a bubble of acid. Choose one creature within
+Magnificent Mansion range, or choose two creatures within range that are
+
+5TH LEVEL Mordenkainen’s Sword within 5 feet of each other. A target must succeed on a
+
+Animate Objects Plane Shirt Dexterity saving throw or take 1d6 acid damage.
+
+Bigby's Hand Prismatic Spray This spell’s damage increases by 1d6 when you reach
+
+Cloudkill SLATE Sth level (2d6), 11th level (3d6), and 17th level (4d6).
+
+Cone of Cold Reverse Gravity AID
+
+Conjure Elemental Sequester 2nd-level abjuration
+
+Contact Other Plane
+
+Simulacrum
+
+Casting Time: | action
+
+lige Symbol Range: 30 feet
+Dominate Person Teleport Components: V, S, M (a tiny strip of white cloth)
+Dream ra
+
+Geas 8TH LEVEL Duration: 8 hours
+
+Hold Monster Antimagic Field Your spell bolsters your allies with toughness and
+
+resolve. Choose up to three creatures within range.
+C| Each target’s hit point maximum and current hit points
+Mislead oer ;
+Control Weather increase by 5 for the duration.
+Modify Memory er At Higher Levels. When you cast this spell using |
+Passwall oN heii a spell slot of 3rd level or higher, a target’s hit points
+increase by an additional! 5 for each slot level above 2nd.
+
+Legend Lore Antipathy/Sympathy
+
+Planar Binding Dominate Monster
+
+Rary’s Telepathic Bond ‘polls
+Scrying Incendiary Cloud ALARM
+scone Maze Ist-level abjuration (ritual)
+Taleinese Mind Blank Casting Time: 1 minute
+Teleportation Circle Power Word Stun Range: 30 feet
+Wall of Force Sunburst Components: V, S, M (a tiny bell and a piece of |
+Wall of Stone Telepathy fine silver wire) |
+Trap the Soul Duration: 8 hours |
+6TH LEVEL TH Eee You set an alarm against unwanted intrusion. Choose |
+Arcane Gate 9 = a door, a window, or an area within range that is no
+Chain Lightning Astral Projection larger than a 20-foot cube. Until the spell ends, an alarm
+Circle of Deeth Foresight alerts you whenever a Tiny or larger creature touches
+Contingency Gate or enters the warded area. When you cast the spell, you
+Create Indes Imprisonment can designate creatures that won't set off the alarm. You |
+Disintegrate Meteor Swarm also choose whether the alarm is mental or audible. )
+Drawniiigiinstant Power Word Kill | A mental alarm alerts you with a ping in your mind
+Prismatic Wall if you are within 1 mile of the warded area. This ping
+Surniaens Beepechance awakens you if you are sleeping.
+Eyebite 7 St : An audible alarm produces the sound of a hand bell
+Flesh to Stone “Te for 10 seconds within 60 feet.
+Globe of Invulnerability True Polymorph |
+Guards and Wards Weird ALTER SELF
+Magic Jar Wish 2nd-level transmutation
+Mass Suggestion Casting Time: 1 action
+Move Earth Range: Self
+
+Components: V, S
+
+Otiluke’s Freezing Sphere
+Duration: Concentration, up to 1 hour
+
+Otto’s Irresistible Dance
+You assume a different form. When you cast the spell,
+choose one of the following options, the effects of which
+last for the duration of the spell. While the spell lasts,
+
+Programmed Illusion
+
+you can end one option as an action to gain the benefits
+of a different one.
+
+Aquatic Adaptation. You adapt your body to an
+aquatic environment, sprouting gills and growing
+webbing between your fingers. You can breathe
+underwater and gain a swimming speed equal to your
+walking speed.
+
+Change Appearance. You transform your appearance.
+
+You decide what you look like, including your height,
+weight, facial features, sound of your voice, hair length,
+coloration, and distinguishing characteristics, if any.
+You can make yourself appear as a member of another
+race, though none of your statistics change. You also
+can't appear as a creature of a different size than you,
+and your basic shape stays the same; if you're bipedal,
+you can’t use this spell to become quadrupedal, for
+instance. At any time for the duration of the spell, you
+can use your action to change your appearance in
+
+this way again.
+
+Natural Weapons. You grow claws, fangs, spines,
+horns, or a different natural weapon of your choice. Your
+unarmed strikes deal 1d6 bludgeoning, piercing, or
+slashing damage, as appropriate to the natural weapon
+you chose, and you are proficient with your unarmed
+strikes. Finally, the natural weapon is magic and you
+have a +1 bonus to the attack and damage rolls you
+make using it.
