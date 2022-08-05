@@ -30,9 +30,6 @@ class Scan:  # use OCR to grab array of text
         self.text_file = out_directory / Path("out_text.txt")
         print(f"Text File Dir: {self.text_file}")
 
-        # self.read_debug = 0
-        # self.write_debug = 0
-
     def extract(self):
         # debug check
         # if exists(os.getcwd() + r'/out_text.txt') is True:
