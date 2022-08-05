@@ -93,10 +93,39 @@ class Scan:  # use OCR to grab array of text
         return scanned
 
 
-class Parse:  # make object for each spell
-    def __init__(self) -> None:
-        pass
+class Spell:  # make object for each spell
+    def __init__(self):
+        # spell structures
+        self.title = ''
+        self.level = ''
+        self.cast_time = ''
+        self.range = ''
+        self.components = ''
+        self.duration = ''
+        self.description = ''
 
+        # source text file
+        self.text_file = Path(os.getcwd() + r'/out_text.txt')
+        # array to hold text
+        self.spell_text = []
+
+    def preprocess(self):  # remove lines & store text in array
+
+        with open(self.text_file) as text_file:
+
+            for line in text_file:
+                # ignore blank lines
+                if line != '\n':
+                    # store line in array
+                    self.spell_text.append(line)
+
+        text_file.close()
+    
+    def parse(self):  # read through source text for spell parts
+        
+        for line in self.spell_text:
+            if line.isupper() = True:
+                self.title = line[0:len(line)-1]
 
 class Serialize:  # eval & format for db
     def __init__(self) -> None:
