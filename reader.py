@@ -116,15 +116,16 @@ class Spell:  # make object for each spell
             for line in text_file:
                 # ignore blank lines
                 if line != '\n':
+                    text = line.split()
                     # store line in array
                     self.spell_text.append(line)
 
         text_file.close()
-    
+
     def parse(self):  # read through source text for spell parts
-        
+
         for line in self.spell_text:
-            if line.isupper() = True:
+            if line.isupper() is True:
                 self.title = line[0:len(line)-1]
 
 class Serialize:  # eval & format for db
