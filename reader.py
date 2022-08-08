@@ -1,5 +1,6 @@
 # reads pdfs and outputs their text
 
+from curses.ascii import isupper
 from distutils.log import info
 from importlib.resources import path
 import os
@@ -93,9 +94,9 @@ class Scan:  # use OCR to grab array of text
         return scanned
 
 
-class Spell:  # make object for each spell
+class Spell:  # structure of each spell
     def __init__(self):
-        # spell structures
+        # attributes
         self.title = ''
         self.level = ''
         self.cast_time = ''
@@ -104,29 +105,6 @@ class Spell:  # make object for each spell
         self.duration = ''
         self.description = ''
 
-        # source text file
-        self.text_file = Path(os.getcwd() + r'/out_text.txt')
-        # array to hold text
-        self.spell_text = []
-
-    def preprocess(self):  # remove lines & store text in array
-
-        with open(self.text_file) as text_file:
-
-            for line in text_file:
-                # ignore blank lines
-                if line != '\n':
-                    text = line.split()
-                    # store line in array
-                    self.spell_text.append(line)
-
-        text_file.close()
-
-    def parse(self):  # read through source text for spell parts
-
-        for line in self.spell_text:
-            if line.isupper() is True:
-                self.title = line[0:len(line)-1]
 
 class Serialize:  # eval & format for db
     def __init__(self) -> None:
@@ -136,3 +114,89 @@ class Serialize:  # eval & format for db
 class Store:  # insert formatted objects into db
     def __init__(self) -> None:
         pass
+
+
+def parse():  # read through source text for spell parts
+
+    # spell text file
+    text_file = Path(os.getcwd() + r'/out_text.txt')
+
+    # spell consists of 7 parts, 6 of which are single lines
+    parts_counter = 1
+
+    with open(text_file) as text_file:
+
+        # object to contain spell data before writing/printing
+        spell = Spell()
+
+        # read all the lines of text
+        lines = text_file.readlines()
+
+        # iterate through spell text to store pieces in object
+        for i in tqdm(range(0, len(lines)), desc='parsing'):
+
+            # get current line
+            line = lines[i]
+
+            # check if last line
+            if i == len(lines) - 1:
+
+                # add final line of description
+                spell.description = spell.description + line
+
+                # store/print spell
+                print(f'{vars(spell)}\n')
+
+            # ignore blank lines
+            elif line != '\n':
+
+                # check for spell part and store in proper object attribute
+                if parts_counter == 1:
+                    spell.title = line[0:len(line)-1]
+                    parts_counter += 1
+
+                elif parts_counter == 2:
+                    spell.level = line[0:len(line)-1]
+                    parts_counter += 1
+
+                elif parts_counter == 3:
+                    spell.cast_time = line[14:len(line)-1]
+                    parts_counter += 1
+
+                elif parts_counter == 4:
+                    spell.range = line[7:len(line)-1]
+                    parts_counter += 1
+
+                elif parts_counter == 5:
+                    spell.components = line[11:len(line)-1]
+                    parts_counter += 1
+
+                elif parts_counter == 6:
+                    spell.duration = line[0:len(line)-1]
+                    parts_counter += 1
+
+                else:
+                    # check next line for all CAPS title of next spell
+                    if line.isupper() is True:
+
+                        # store/print spell
+                        print(f'{vars(spell)}\n')
+
+                        # reset for next spell
+                        spell.title = line[0:len(line)-1]
+                        spell.description = ''
+                        parts_counter = 2
+
+                    # add line of description text to spell object
+                    else:
+                        spell.description = spell.description + line
+    text_file.close()
+
+
+def main():
+    # checks that the spell text is present
+    if exists(os.getcwd() + r'/out_text.txt') is True:
+        parse()
+
+
+main()

@@ -9938,7 +9938,7 @@ using 5 feet of movement.
 TREE STRIDE
 5th-level conjuration
 
-Casting Time: | action
+Casting Time: 1 action
 
 Range: Self
 
@@ -10751,4 +10751,3 @@ avoid answering questions to which it would normally
 respond with a lie. Such a creature can be evasive in
 its answers as long as it remains within the boundaries
 of the truth.
-
