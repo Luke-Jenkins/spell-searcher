@@ -1,12 +1,13 @@
 # reads pdfs and outputs their text
 
-from curses.ascii import isupper
-from distutils.log import info
-from importlib.resources import path
+# from curses.ascii import isupper
+# from distutils.log import info
+# from importlib.resources import path
+import csv
 import os
 from os.path import exists
-from tqdm import tqdm 
-import platform
+from tqdm import tqdm
+# import platform
 from tempfile import TemporaryDirectory
 from pathlib import Path
 
@@ -105,15 +106,47 @@ class Spell:  # structure of each spell
         self.duration = ''
         self.description = ''
 
+    # create iterable object to be used by csv writer
+    def __iter__(self):
+        return iter(
+            [self.title, self.level, self.cast_time, self.range,
+             self.components, self.duration, self.description])
+
 
 class Serialize:  # eval & format for db
     def __init__(self) -> None:
         pass
 
 
-class Store:  # insert formatted objects into db
-    def __init__(self) -> None:
-        pass
+class Store():  # insert formatted objects into db
+    def __init__(self):
+        # keys for csv
+        self.spell_attributes = [
+            'title', 'level', 'cast time', 'range',
+            'components', 'duration', 'description']
+
+        # path for csv
+        self.spells = Path(os.getcwd() + r'/spells.csv')
+
+    def write(self, spell):
+
+        # open csv
+        with open(self.spells, 'a+') as spells:
+
+            # tool for editing csv
+            writer = csv.writer(spells)
+            # set file pointer to beginning
+            spells.seek(0)
+            # tool for reading csv
+            reader = csv.reader(spells)
+
+            # check that spell title doesn't already exist
+            for row in tqdm(reader, desc='checking if spell exists'):
+                if spell.title == row[0]:
+                    return
+
+            # append new spell to csv
+            writer.writerow(spell)
 
 
 def parse():  # read through source text for spell parts
@@ -128,6 +161,7 @@ def parse():  # read through source text for spell parts
 
         # object to contain spell data before writing/printing
         spell = Spell()
+        store = Store()
 
         # read all the lines of text
         lines = text_file.readlines()
@@ -145,7 +179,8 @@ def parse():  # read through source text for spell parts
                 spell.description = spell.description + line
 
                 # store/print spell
-                print(f'{vars(spell)}\n')
+                # print(f'{vars(spell)}\n')
+                store.write(spell)
 
             # ignore blank lines
             elif line != '\n':
@@ -172,15 +207,18 @@ def parse():  # read through source text for spell parts
                     parts_counter += 1
 
                 elif parts_counter == 6:
-                    spell.duration = line[0:len(line)-1]
+                    spell.duration = line[10:len(line)-1]
                     parts_counter += 1
 
                 else:
                     # check next line for all CAPS title of next spell
                     if line.isupper() is True:
-
+                        # remove final \n character from desc.
+                        spell.description = spell.description[
+                            0:len(spell.description)-1]
                         # store/print spell
-                        print(f'{vars(spell)}\n')
+                        # print(f'{vars(spell)}\n')
+                        store.write(spell)
 
                         # reset for next spell
                         spell.title = line[0:len(line)-1]
